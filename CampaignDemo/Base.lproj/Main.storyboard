@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Collection View Controller-->
+        <scene sceneID="86W-t7-Qgc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sjd-wd-F74" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <collectionViewController id="nM8-iW-CEe" customClass="HomeCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="O8E-0e-vQO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2IN-ea-gcT">
+                            <size key="itemSize" width="160" height="160"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeMenuCell" id="MUg-Qi-3Ri" customClass="HomeCell">
+                                <rect key="frame" x="0.0" y="64" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CAMPAIGN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGZ-ye-i14">
+                                            <rect key="frame" x="8" y="128" width="144" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTL-fE-qiF">
+                                            <rect key="frame" x="30" y="16" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iGZ-ye-i14" firstAttribute="trailing" secondItem="MUg-Qi-3Ri" secondAttribute="trailingMargin" id="21a-0r-bfu"/>
+                                    <constraint firstItem="iGZ-ye-i14" firstAttribute="bottom" secondItem="MUg-Qi-3Ri" secondAttribute="bottomMargin" id="ICz-gC-3fC"/>
+                                    <constraint firstItem="iGZ-ye-i14" firstAttribute="leading" secondItem="MUg-Qi-3Ri" secondAttribute="leadingMargin" id="MA5-sR-DQM"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="homeCellIcon" destination="wTL-fE-qiF" id="Bma-pz-MsV"/>
+                                    <outlet property="homeCellLabel" destination="iGZ-ye-i14" id="ycl-NZ-ppb"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="nM8-iW-CEe" id="Sy2-Bb-MhN"/>
+                            <outlet property="delegate" destination="nM8-iW-CEe" id="CYw-Bg-cKM"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="cKJ-iX-zjw">
+                        <barButtonItem key="leftBarButtonItem" title="DEMO" style="plain" id="mtr-py-B6K">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="LOGOUT" style="plain" id="NRr-MS-VQG">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="ipf-CP-z3K" kind="show" identifier="beacon_segue" id="Tf1-Dx-d3y"/>
+                    </connections>
+                </collectionViewController>
+            </objects>
+            <point key="canvasLocation" x="2583" y="316"/>
+        </scene>
+        <!--Item View Controller-->
+        <scene sceneID="iaT-Sy-spJ">
+            <objects>
+                <viewController id="ipf-CP-z3K" customClass="ItemViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BuZ-TJ-EgE"/>
+                        <viewControllerLayoutGuide type="bottom" id="TvH-Dq-ldD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDW-4L-iUg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWv-ME-rgQ">
+                                <rect key="frame" x="160" y="140" width="280" height="320"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="beacon_scan_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vve-Ij-xjU">
+                                        <rect key="frame" x="20" y="20" width="240" height="240"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCANNING FOR BEACON..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNw-SY-kaF">
+                                        <rect key="frame" x="8" y="268" width="264" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Vve-Ij-xjU" firstAttribute="leading" secondItem="kWv-ME-rgQ" secondAttribute="leading" id="MeU-G8-9Cw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vve-Ij-xjU" secondAttribute="trailing" id="b81-Sk-dku"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ek-OH-fWt">
+                                <rect key="frame" x="20" y="508" width="560" height="30"/>
+                                <state key="normal" title="VIEW SCAN LOG"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="BEACON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3w-N1-vqc">
+                                <rect key="frame" x="20" y="93" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2ek-OH-fWt" firstAttribute="leading" secondItem="GDW-4L-iUg" secondAttribute="leadingMargin" id="5X3-sU-qbB"/>
+                            <constraint firstItem="kWv-ME-rgQ" firstAttribute="leading" secondItem="GDW-4L-iUg" secondAttribute="leadingMargin" id="5qz-3a-5Ms"/>
+                            <constraint firstItem="kWv-ME-rgQ" firstAttribute="top" secondItem="W3w-N1-vqc" secondAttribute="bottom" constant="24" id="71V-dL-iZi"/>
+                            <constraint firstItem="W3w-N1-vqc" firstAttribute="trailing" secondItem="GDW-4L-iUg" secondAttribute="trailingMargin" id="Ru2-X2-KUI"/>
+                            <constraint firstItem="W3w-N1-vqc" firstAttribute="leading" secondItem="GDW-4L-iUg" secondAttribute="leadingMargin" id="Sek-ZW-Wlq"/>
+                            <constraint firstItem="2ek-OH-fWt" firstAttribute="trailing" secondItem="GDW-4L-iUg" secondAttribute="trailingMargin" id="Xwa-yL-lp8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kWv-ME-rgQ" secondAttribute="trailing" id="vqE-54-e5H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xx8-yA-ri5">
+                        <barButtonItem key="rightBarButtonItem" title="LOGOUT" id="cMe-hV-qob">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="itemImage" destination="Vve-Ij-xjU" id="1uZ-ES-GjH"/>
+                        <outlet property="itemStatusText" destination="dNw-SY-kaF" id="xf3-jU-UyX"/>
+                        <outlet property="itemTitle" destination="W3w-N1-vqc" id="m35-bd-1Qc"/>
+                        <outlet property="itemViewLogButton" destination="2ek-OH-fWt" id="fmY-mc-Q5E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpV-EX-Ddd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3317" y="316"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IXz-rD-KnG">
+                                <rect key="frame" x="20" y="49" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDj-Cf-bQt">
+                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOJ-mX-Cfq">
+                                <rect key="frame" x="20" y="87" width="560" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBa-lE-GQL">
+                                <rect key="frame" x="20" y="125" width="560" height="30"/>
+                                <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <action selector="onLoginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89s-0F-9mV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MDj-Cf-bQt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="190-z1-KHC"/>
+                            <constraint firstItem="MDj-Cf-bQt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9qZ-eG-8Kd"/>
+                            <constraint firstItem="MOJ-mX-Cfq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="F5W-2i-e4C"/>
+                            <constraint firstItem="MOJ-mX-Cfq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="Ghl-Mn-ZJi"/>
+                            <constraint firstItem="IXz-rD-KnG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KXA-0B-wO0"/>
+                            <constraint firstItem="XBa-lE-GQL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Q8o-GM-Np7"/>
+                            <constraint firstItem="XBa-lE-GQL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="105" id="QXs-0d-K0l"/>
+                            <constraint firstItem="MOJ-mX-Cfq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qr8-cK-gix"/>
+                            <constraint firstItem="MDj-Cf-bQt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bln-ol-qCJ"/>
+                            <constraint firstItem="IXz-rD-KnG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="nJ7-4A-xWG"/>
+                            <constraint firstItem="IXz-rD-KnG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pPX-fm-dut"/>
+                            <constraint firstItem="XBa-lE-GQL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vSG-XA-VUh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dh8-DH-Ifc"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="XBa-lE-GQL" id="SnF-yE-oKt"/>
+                        <outlet property="tfEmail" destination="IXz-rD-KnG" id="A13-jQ-Ksu"/>
+                        <outlet property="tfPassword" destination="MOJ-mX-Cfq" id="DWg-Dh-PDZ"/>
+                        <segue destination="moV-bG-TC4" kind="presentation" identifier="login_segue" id="Hai-b9-QWE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011" y="300"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u3Z-1G-phe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="moV-bG-TC4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YYV-qd-KLb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nM8-iW-CEe" kind="relationship" relationship="rootViewController" id="ZjE-sg-PUo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3B-Wq-Y4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="316"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beacon_scan_icon.png" width="400" height="400"/>
+    </resources>
+</document>

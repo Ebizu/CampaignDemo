@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB4F854A1CBC05E10076043E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4F85491CBC05E10076043E /* main.m */; };
+		EB4F854D1CBC05E10076043E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4F854C1CBC05E10076043E /* AppDelegate.m */; };
+		EB4F85501CBC05E10076043E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4F854F1CBC05E10076043E /* LoginViewController.m */; };
+		EB4F85531CBC05E10076043E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4F85511CBC05E10076043E /* Main.storyboard */; };
+		EB4F85561CBC05E10076043E /* CampaignDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB4F85541CBC05E10076043E /* CampaignDemo.xcdatamodeld */; };
+		EB4F85581CBC05E10076043E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4F85571CBC05E10076043E /* Assets.xcassets */; };
+		EB4F855B1CBC05E10076043E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4F85591CBC05E10076043E /* LaunchScreen.storyboard */; };
+		EB4F85661CBC05E10076043E /* CampaignDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4F85651CBC05E10076043E /* CampaignDemoTests.m */; };
+		EB4F85711CBC05E10076043E /* CampaignDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4F85701CBC05E10076043E /* CampaignDemoUITests.m */; };
+		EB4F85801CBC2F180076043E /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4F857F1CBC2F180076043E /* HomeCollectionViewController.m */; };
+		EB4F85831CBC41600076043E /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4F85821CBC41600076043E /* HomeCell.m */; };
+		EB4F85901CBE50F30076043E /* AD FORMATS.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F85861CBE50F30076043E /* AD FORMATS.png */; };
+		EB4F85911CBE50F30076043E /* beacon_detected_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F85871CBE50F30076043E /* beacon_detected_icon.png */; };
+		EB4F85921CBE50F30076043E /* BEACON.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F85881CBE50F30076043E /* BEACON.png */; };
+		EB4F85931CBE50F30076043E /* beacon_scan_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F85891CBE50F30076043E /* beacon_scan_icon.png */; };
+		EB4F85941CBE50F30076043E /* CAMPAIGN.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F858A1CBE50F30076043E /* CAMPAIGN.png */; };
+		EB4F85951CBE50F30076043E /* DWELL TIME.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F858B1CBE50F30076043E /* DWELL TIME.png */; };
+		EB4F85961CBE50F30076043E /* GEOFENCE.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F858C1CBE50F30076043E /* GEOFENCE.png */; };
+		EB4F85971CBE50F30076043E /* geofence_scan_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F858D1CBE50F30076043E /* geofence_scan_icon.png */; };
+		EB4F85981CBE50F30076043E /* logo ebizu.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F858E1CBE50F30076043E /* logo ebizu.png */; };
+		EB4F85991CBE50F30076043E /* PROFILE.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4F858F1CBE50F30076043E /* PROFILE.png */; };
+		EB4F859D1CBE92540076043E /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4F859C1CBE92540076043E /* ItemViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB4F85621CBC05E10076043E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4F853D1CBC05E10076043E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB4F85441CBC05E10076043E;
+			remoteInfo = CampaignDemo;
+		};
+		EB4F856D1CBC05E10076043E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4F853D1CBC05E10076043E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB4F85441CBC05E10076043E;
+			remoteInfo = CampaignDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB4F85451CBC05E10076043E /* CampaignDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampaignDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4F85491CBC05E10076043E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB4F854B1CBC05E10076043E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB4F854C1CBC05E10076043E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB4F854E1CBC05E10076043E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		EB4F854F1CBC05E10076043E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EB4F85521CBC05E10076043E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB4F85551CBC05E10076043E /* CampaignDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CampaignDemo.xcdatamodel; sourceTree = "<group>"; };
+		EB4F85571CBC05E10076043E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB4F855A1CBC05E10076043E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB4F855C1CBC05E10076043E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4F85611CBC05E10076043E /* CampaignDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampaignDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4F85651CBC05E10076043E /* CampaignDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CampaignDemoTests.m; sourceTree = "<group>"; };
+		EB4F85671CBC05E10076043E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4F856C1CBC05E10076043E /* CampaignDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampaignDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4F85701CBC05E10076043E /* CampaignDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CampaignDemoUITests.m; sourceTree = "<group>"; };
+		EB4F85721CBC05E10076043E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4F857E1CBC2F180076043E /* HomeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewController.h; sourceTree = "<group>"; };
+		EB4F857F1CBC2F180076043E /* HomeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
+		EB4F85811CBC41600076043E /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		EB4F85821CBC41600076043E /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		EB4F85861CBE50F30076043E /* AD FORMATS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AD FORMATS.png"; path = "assets/AD FORMATS.png"; sourceTree = "<group>"; };
+		EB4F85871CBE50F30076043E /* beacon_detected_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beacon_detected_icon.png; path = assets/beacon_detected_icon.png; sourceTree = "<group>"; };
+		EB4F85881CBE50F30076043E /* BEACON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BEACON.png; path = assets/BEACON.png; sourceTree = "<group>"; };
+		EB4F85891CBE50F30076043E /* beacon_scan_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beacon_scan_icon.png; path = assets/beacon_scan_icon.png; sourceTree = "<group>"; };
+		EB4F858A1CBE50F30076043E /* CAMPAIGN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CAMPAIGN.png; path = assets/CAMPAIGN.png; sourceTree = "<group>"; };
+		EB4F858B1CBE50F30076043E /* DWELL TIME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DWELL TIME.png"; path = "assets/DWELL TIME.png"; sourceTree = "<group>"; };
+		EB4F858C1CBE50F30076043E /* GEOFENCE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GEOFENCE.png; path = assets/GEOFENCE.png; sourceTree = "<group>"; };
+		EB4F858D1CBE50F30076043E /* geofence_scan_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = geofence_scan_icon.png; path = assets/geofence_scan_icon.png; sourceTree = "<group>"; };
+		EB4F858E1CBE50F30076043E /* logo ebizu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo ebizu.png"; path = "assets/logo ebizu.png"; sourceTree = "<group>"; };
+		EB4F858F1CBE50F30076043E /* PROFILE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PROFILE.png; path = assets/PROFILE.png; sourceTree = "<group>"; };
+		EB4F859B1CBE92540076043E /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		EB4F859C1CBE92540076043E /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB4F85421CBC05E10076043E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4F855E1CBC05E10076043E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4F85691CBC05E10076043E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB4F853C1CBC05E10076043E = {
+			isa = PBXGroup;
+			children = (
+				EB4F85471CBC05E10076043E /* CampaignDemo */,
+				EB4F85641CBC05E10076043E /* CampaignDemoTests */,
+				EB4F856F1CBC05E10076043E /* CampaignDemoUITests */,
+				EB4F85461CBC05E10076043E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB4F85461CBC05E10076043E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F85451CBC05E10076043E /* CampaignDemo.app */,
+				EB4F85611CBC05E10076043E /* CampaignDemoTests.xctest */,
+				EB4F856C1CBC05E10076043E /* CampaignDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB4F85471CBC05E10076043E /* CampaignDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F859A1CBE511A0076043E /* assets */,
+				EB4F854B1CBC05E10076043E /* AppDelegate.h */,
+				EB4F854C1CBC05E10076043E /* AppDelegate.m */,
+				EB4F854E1CBC05E10076043E /* LoginViewController.h */,
+				EB4F854F1CBC05E10076043E /* LoginViewController.m */,
+				EB4F85511CBC05E10076043E /* Main.storyboard */,
+				EB4F85571CBC05E10076043E /* Assets.xcassets */,
+				EB4F85591CBC05E10076043E /* LaunchScreen.storyboard */,
+				EB4F855C1CBC05E10076043E /* Info.plist */,
+				EB4F85541CBC05E10076043E /* CampaignDemo.xcdatamodeld */,
+				EB4F85481CBC05E10076043E /* Supporting Files */,
+				EB4F857E1CBC2F180076043E /* HomeCollectionViewController.h */,
+				EB4F857F1CBC2F180076043E /* HomeCollectionViewController.m */,
+				EB4F85811CBC41600076043E /* HomeCell.h */,
+				EB4F85821CBC41600076043E /* HomeCell.m */,
+				EB4F859B1CBE92540076043E /* ItemViewController.h */,
+				EB4F859C1CBE92540076043E /* ItemViewController.m */,
+			);
+			path = CampaignDemo;
+			sourceTree = "<group>";
+		};
+		EB4F85481CBC05E10076043E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F85491CBC05E10076043E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB4F85641CBC05E10076043E /* CampaignDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F85651CBC05E10076043E /* CampaignDemoTests.m */,
+				EB4F85671CBC05E10076043E /* Info.plist */,
+			);
+			path = CampaignDemoTests;
+			sourceTree = "<group>";
+		};
+		EB4F856F1CBC05E10076043E /* CampaignDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F85701CBC05E10076043E /* CampaignDemoUITests.m */,
+				EB4F85721CBC05E10076043E /* Info.plist */,
+			);
+			path = CampaignDemoUITests;
+			sourceTree = "<group>";
+		};
+		EB4F859A1CBE511A0076043E /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F85861CBE50F30076043E /* AD FORMATS.png */,
+				EB4F85871CBE50F30076043E /* beacon_detected_icon.png */,
+				EB4F85881CBE50F30076043E /* BEACON.png */,
+				EB4F85891CBE50F30076043E /* beacon_scan_icon.png */,
+				EB4F858A1CBE50F30076043E /* CAMPAIGN.png */,
+				EB4F858B1CBE50F30076043E /* DWELL TIME.png */,
+				EB4F858C1CBE50F30076043E /* GEOFENCE.png */,
+				EB4F858D1CBE50F30076043E /* geofence_scan_icon.png */,
+				EB4F858E1CBE50F30076043E /* logo ebizu.png */,
+				EB4F858F1CBE50F30076043E /* PROFILE.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB4F85441CBC05E10076043E /* CampaignDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4F85751CBC05E10076043E /* Build configuration list for PBXNativeTarget "CampaignDemo" */;
+			buildPhases = (
+				EB4F85411CBC05E10076043E /* Sources */,
+				EB4F85421CBC05E10076043E /* Frameworks */,
+				EB4F85431CBC05E10076043E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CampaignDemo;
+			productName = CampaignDemo;
+			productReference = EB4F85451CBC05E10076043E /* CampaignDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB4F85601CBC05E10076043E /* CampaignDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4F85781CBC05E10076043E /* Build configuration list for PBXNativeTarget "CampaignDemoTests" */;
+			buildPhases = (
+				EB4F855D1CBC05E10076043E /* Sources */,
+				EB4F855E1CBC05E10076043E /* Frameworks */,
+				EB4F855F1CBC05E10076043E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB4F85631CBC05E10076043E /* PBXTargetDependency */,
+			);
+			name = CampaignDemoTests;
+			productName = CampaignDemoTests;
+			productReference = EB4F85611CBC05E10076043E /* CampaignDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB4F856B1CBC05E10076043E /* CampaignDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4F857B1CBC05E10076043E /* Build configuration list for PBXNativeTarget "CampaignDemoUITests" */;
+			buildPhases = (
+				EB4F85681CBC05E10076043E /* Sources */,
+				EB4F85691CBC05E10076043E /* Frameworks */,
+				EB4F856A1CBC05E10076043E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB4F856E1CBC05E10076043E /* PBXTargetDependency */,
+			);
+			name = CampaignDemoUITests;
+			productName = CampaignDemoUITests;
+			productReference = EB4F856C1CBC05E10076043E /* CampaignDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB4F853D1CBC05E10076043E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ebizu;
+				TargetAttributes = {
+					EB4F85441CBC05E10076043E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EB4F85601CBC05E10076043E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EB4F85441CBC05E10076043E;
+					};
+					EB4F856B1CBC05E10076043E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EB4F85441CBC05E10076043E;
+					};
+				};
+			};
+			buildConfigurationList = EB4F85401CBC05E10076043E /* Build configuration list for PBXProject "CampaignDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB4F853C1CBC05E10076043E;
+			productRefGroup = EB4F85461CBC05E10076043E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB4F85441CBC05E10076043E /* CampaignDemo */,
+				EB4F85601CBC05E10076043E /* CampaignDemoTests */,
+				EB4F856B1CBC05E10076043E /* CampaignDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB4F85431CBC05E10076043E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4F855B1CBC05E10076043E /* LaunchScreen.storyboard in Resources */,
+				EB4F85911CBE50F30076043E /* beacon_detected_icon.png in Resources */,
+				EB4F85921CBE50F30076043E /* BEACON.png in Resources */,
+				EB4F85581CBC05E10076043E /* Assets.xcassets in Resources */,
+				EB4F85991CBE50F30076043E /* PROFILE.png in Resources */,
+				EB4F85941CBE50F30076043E /* CAMPAIGN.png in Resources */,
+				EB4F85981CBE50F30076043E /* logo ebizu.png in Resources */,
+				EB4F85951CBE50F30076043E /* DWELL TIME.png in Resources */,
+				EB4F85901CBE50F30076043E /* AD FORMATS.png in Resources */,
+				EB4F85971CBE50F30076043E /* geofence_scan_icon.png in Resources */,
+				EB4F85931CBE50F30076043E /* beacon_scan_icon.png in Resources */,
+				EB4F85961CBE50F30076043E /* GEOFENCE.png in Resources */,
+				EB4F85531CBC05E10076043E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4F855F1CBC05E10076043E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4F856A1CBC05E10076043E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB4F85411CBC05E10076043E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4F85831CBC41600076043E /* HomeCell.m in Sources */,
+				EB4F85501CBC05E10076043E /* LoginViewController.m in Sources */,
+				EB4F854D1CBC05E10076043E /* AppDelegate.m in Sources */,
+				EB4F859D1CBE92540076043E /* ItemViewController.m in Sources */,
+				EB4F85561CBC05E10076043E /* CampaignDemo.xcdatamodeld in Sources */,
+				EB4F854A1CBC05E10076043E /* main.m in Sources */,
+				EB4F85801CBC2F180076043E /* HomeCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4F855D1CBC05E10076043E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4F85661CBC05E10076043E /* CampaignDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4F85681CBC05E10076043E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4F85711CBC05E10076043E /* CampaignDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB4F85631CBC05E10076043E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB4F85441CBC05E10076043E /* CampaignDemo */;
+			targetProxy = EB4F85621CBC05E10076043E /* PBXContainerItemProxy */;
+		};
+		EB4F856E1CBC05E10076043E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB4F85441CBC05E10076043E /* CampaignDemo */;
+			targetProxy = EB4F856D1CBC05E10076043E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB4F85511CBC05E10076043E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB4F85521CBC05E10076043E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB4F85591CBC05E10076043E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB4F855A1CBC05E10076043E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB4F85731CBC05E10076043E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB4F85741CBC05E10076043E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB4F85761CBC05E10076043E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CampaignDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebizu.CampaignDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB4F85771CBC05E10076043E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CampaignDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebizu.CampaignDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EB4F85791CBC05E10076043E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CampaignDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebizu.CampaignDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampaignDemo.app/CampaignDemo";
+			};
+			name = Debug;
+		};
+		EB4F857A1CBC05E10076043E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CampaignDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebizu.CampaignDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampaignDemo.app/CampaignDemo";
+			};
+			name = Release;
+		};
+		EB4F857C1CBC05E10076043E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CampaignDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebizu.CampaignDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CampaignDemo;
+			};
+			name = Debug;
+		};
+		EB4F857D1CBC05E10076043E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CampaignDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebizu.CampaignDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CampaignDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB4F85401CBC05E10076043E /* Build configuration list for PBXProject "CampaignDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4F85731CBC05E10076043E /* Debug */,
+				EB4F85741CBC05E10076043E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB4F85751CBC05E10076043E /* Build configuration list for PBXNativeTarget "CampaignDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4F85761CBC05E10076043E /* Debug */,
+				EB4F85771CBC05E10076043E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB4F85781CBC05E10076043E /* Build configuration list for PBXNativeTarget "CampaignDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4F85791CBC05E10076043E /* Debug */,
+				EB4F857A1CBC05E10076043E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB4F857B1CBC05E10076043E /* Build configuration list for PBXNativeTarget "CampaignDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4F857C1CBC05E10076043E /* Debug */,
+				EB4F857D1CBC05E10076043E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB4F85541CBC05E10076043E /* CampaignDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB4F85551CBC05E10076043E /* CampaignDemo.xcdatamodel */,
+			);
+			currentVersion = EB4F85551CBC05E10076043E /* CampaignDemo.xcdatamodel */;
+			path = CampaignDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB4F853D1CBC05E10076043E /* Project object */;
+}
